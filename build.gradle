@@ -1,0 +1,31 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.2'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        // 添加如下 maven 仓库地址（腾讯云的对象存储）
+        maven {
+            url "https://dl.bintray.com/tencentqcloudterminal/maven"
+        }
+
+        //好友列表
+        maven { url "https://jitpack.io" }//使用BRVAH而引入
+        maven { url "http://lib.gcssloop.com/repository/gcssloop-central/" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

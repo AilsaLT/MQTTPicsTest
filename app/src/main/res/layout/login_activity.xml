@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/login"/>
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_username"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/username"/>
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_toRightOf="@+id/iv_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="username(1)"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_password"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/password"/>
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_toRightOf="@+id/iv_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="password(1)"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="登录"/>
+
+
+</LinearLayout>

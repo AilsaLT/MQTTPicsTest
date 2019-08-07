@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- transcriptMode 自动向下滚动    alwaysScroll一直向下滚动状态;   divider设置间隔线效果 ;   listSelector设置没有滑动效果 -->
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/tongbao_utils"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+        <EditText
+            android:id="@+id/et_sendText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext_selector"
+            android:imeOptions="actionSend"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_button"
+            android:textColor="#000"
+            android:text="发送"/>
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/tb_more"
+            android:padding="4dp"
+            android:clickable="true"/>
+    </LinearLayout>
+
+</LinearLayout>
